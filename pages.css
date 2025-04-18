@@ -1,0 +1,267 @@
+/* Additional CSS for inner pages */
+
+.page-title {
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-title h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Surah list styles */
+.surah-list {
+    padding: 40px 0 80px;
+}
+
+.surah-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.surah-box {
+    background-color: var(--box-bg-color);
+    color: var(--box-text-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.surah-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.surah-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.surah-details {
+    flex: 1;
+}
+
+.surah-name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.surah-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.surah-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.load-more {
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+    background-color: #0d7ad7;
+}
+
+/* Parts page styles */
+.juz-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.juz-box {
+    background-color: var(--box-bg-color);
+    color: var(--box-text-color);
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juz-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.juz-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--highlight-color);
+}
+
+.juz-name {
+    font-size: 1.2rem;
+}
+
+.juz-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Pages view styles */
+.mushaf-container {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.mushaf-page {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.page-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.page-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn:hover {
+    background-color: #001a5e;
+}
+
+.page-number {
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+/* Audio page styles */
+.reciter-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.reciter-box {
+    background-color: var(--box-bg-color);
+    color: var(--box-text-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reciter-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reciter-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.reciter-details {
+    flex: 1;
+}
+
+.reciter-name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.reciter-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.reciter-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .juz-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .surah-grid, 
+    .reciter-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .juz-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .page-title h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .juz-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .surah-name {
+        font-size: 1.1rem;
+    }
+    
+    .page-controls {
+        flex-wrap: wrap;
+    }
+    
+    .page-btn {
+        margin-bottom: 10px;
+    }
+}

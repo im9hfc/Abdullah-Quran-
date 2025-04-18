@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن بالصفحات</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/quran-logo.png" alt="القرآن الكريم">
+                    <h1>القرآن الكريم</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <div class="container">
+            <h1>القرآن بالصفحات</h1>
+            <p>تصفح القرآن الكريم صفحة صفحة</p>
+        </div>
+    </div>
+
+    <div class="mushaf-container">
+        <div class="container">
+            <div class="page-controls">
+                <button class="page-btn" id="prev-page"><i class="fas fa-chevron-right"></i> الصفحة السابقة</button>
+                <div class="page-number">صفحة <span id="current-page">1</span> من <span id="total-pages">604</span></div>
+                <button class="page-btn" id="next-page">الصفحة التالية <i class="fas fa-chevron-left"></i></button>
+            </div>
+            
+            <div class="mushaf-view">
+                <img src="../images/pages/page001.jpg" alt="صفحة من المصحف" class="mushaf-page" id="quran-page">
+            </div>
+            
+            <div class="page-controls">
+                <button class="page-btn" id="prev-page-bottom"><i class="fas fa-chevron-right"></i> الصفحة السابقة</button>
+                <div class="page-number">صفحة <span id="current-page-bottom">1</span> من <span id="total-pages-bottom">604</span></div>
+                <button class="page-btn" id="next-page-bottom">الصفحة التالية <i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; <span id="year"></span> - القرآن الكريم</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quran-display.js"></script>
+</body>
+</html>

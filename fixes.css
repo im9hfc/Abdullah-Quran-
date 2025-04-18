@@ -1,0 +1,10 @@
+/* Fix for iframe display in pages.html */
+.mushaf-view iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    background-color: #fff9e6;
+}
